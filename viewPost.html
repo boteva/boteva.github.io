@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My SoftUni Blog</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="indexLogged.html" class="navbar-brand">SoftUni Blog</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Welcome (User)</a></li>
+                    <li><a href="createNewPost.html">New post</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="container body-content">
+
+        <div class="row">
+            <div class="col-md-12">
+                <article>
+                    <header>
+                        <h1>Here’s one example of a machine-generated joke: “Why did the chicken cross the road? To see
+                            the
+                            punchline.” Learn about the work that scientists are doing to make AI more LOL.</h1>
+
+                        <small class="author">
+                            7 July 2018 / Kevin Litman-Navarro
+                        </small>
+
+                    </header>
+                    <img src="images/hahaha.gif" height="378" width="660"/>
+                    <br><br>
+                    <p>
+                        <b>So, how do you program a computer for laughs?</b> “Humor is one of the most non-computational
+                        things,” Misra says. In other words, there’s no formula for funny-ness. While you can learn how
+                        to
+                        bake a cake or build a chair from a set of instructions, there’s no recipe for crafting a great
+                        joke. But if we want to imbue our machines with wit, we need to find some kind of a recipe;
+                        after
+                        all, computers are unflinching rule-followers. This is the great quagmire of computational
+                        humor.
+                    </p>
+                    <p>
+                        <b>To do this, you have to pick apart what makes a particular joke funny.</b> Then you need to
+                        turn
+                        your ideas into rules and codify them into algorithms. However, humor is kind of like
+                        pornography …
+                        you know it when you see it. A joke told by British comedian Lee Dawson exemplifies the
+                        difficulties
+                        of deconstructing jokes, according to Misra. It goes: “My mother-in-law fell down a wishing well
+                        the
+                        other day. I was surprised — I had no idea that they worked!” It’s not so easy to pick out why
+                        this
+                        joke works (and some mothers-in-law would argue it does not work at all). For starters, there’s
+                        a
+                        certain amount of societal context that goes with understanding why a mother-in-law going down a
+                        well is funny. Does this mean that creating a joke-telling computer would require the uploading
+                        and
+                        analyzing of an entire culture’s worth of knowledge and experience?
+                    </p>
+                    <p>
+                        <b>Some researchers have been experimenting with a different approach.</b> Abhinav Moudgil, a
+                        graduate student at the International Institute for Information Technology in Hyderabad, India,
+                        works primarily in the field of computer vision but explores his interest in computational humor
+                        in
+                        his spare time. Moudgil has been working with a recurrent neural network, a popular type of
+                        statistical model. The distinction between neural networks and older, rule-based models could be
+                        compared to the difference between showing and telling. With rule-based algorithms, most of the
+                        legwork is done by the coders; they put in a great deal of labor and energy up-front, writing
+                        specific directions for the program that tells it what to do. The system is highly constrained,
+                        and
+                        it produces a set of similarly structured jokes. The results are decent but closer to what kids
+                        —
+                        not adults — might find hilarious.
+                        <br><br>
+                        Here are two examples:
+                        <br><br>
+                        “What is the difference between a mute glove and a silent cat? One is a cute mitten and the
+                        other is
+                        a mute kitten.”
+                        <br><br>
+                        “What do you call a strange market? A bizarre bazaar.”</p>
+                    <br>
+                    <p>
+                        <b>With neural networks, data does the heavy lifting; you can show a program what to generate by
+                            feeding it a dataset of hundreds of thousands of examples.</b> The network picks out
+                        patterns and emulates them when it generates text. (This is the same way computers “learn” how
+                        to recognize particular images.) Of course, neural networks don’t see like humans do. Networks
+                        analyze data inputs, whether pictures or text, as strings of numbers, and comb through these
+                        strings to detect patterns. The number of times your network analyzes the dataset — called
+                        iterations — is incredibly important: too few iterations, and the network won’t pick up enough
+                        patterns; too many, and the network will pick out superfluous patterns. For instance, if you
+                        want your network to recognize flamingos but you made it iterate on a set of flamingo pictures
+                        for too long, it would probably get better at recognizing that particular set of pictures rather
+                        than flamingos in general.</p>
+
+                    <p>
+                        <b>Moudgil created a dataset of 231,657 short jokes culled from the far corners of the
+                            Internet.</b> He fed it to his network, which analyzed the jokes letter by letter. Because
+                        the network operates on a character level, it didn’t analyze the wordplay of the jokes; instead,
+                        it picked up on the probabilities of certain letters appearing after other letters and then
+                        generated jokes along similar lines. So, because many of the jokes in the training set were in
+                        the form “What do you call…” or “Why did the…”, the letter “w” had a high probability of being
+                        followed by “h”, the letter pair “wh” had high probabilities of being followed by “y” or “a,”
+                        and the letter sequence “wha” was almost certainly followed by “t.”</p>
+                    <p>
+                        <b>His network generated a lot of jokes — some terrible, some awful and some okay.</b> Here’s a
+                        sample:
+                    <p>
+                        “I think hard work is the reason they hate me.”</p>
+                    <p>
+                        “Why can’t Dracula be true? Because there are too many cheetahs.”</p>
+                    <p>
+                        “Why did the cowboy buy the frog? Because he didn’t have any brains.”</p>
+                    <p>
+                        “Why did the chicken cross the road? To see the punchline.”</p><br>
+                    <p>
+                        <b>Some read more like Zen koans than jokes.</b> That’s because Moudgil trained his network with
+                        many different kinds of humor. While his efforts won’t get him a comedy writing gig, he
+                        considers them to be promising. He plans to continue his work, and he’s also made his dataset
+                        public to encourage others to experiment as well. He wants the machine learning community to
+                        know that, he says, “a neural net is a way to do humor research.” On his next project, Moudgil
+                        will try to eliminate nonsensical results by training the network on a large set of English
+                        sentences before he trains it on a joke dataset. That way, the network will have integrated
+                        grammar into its joke construction and should generate much less gibberish.</p><br>
+
+                    <p>
+                        <b>Other efforts have focused on replicating a particular comedian’s style.</b> He Ren and Quan
+                        Yang of Stanford University trained a neural network to imitate the humor of Conan O’Brien.
+
+                        Their model generated these one-liners:
+
+                        <br>“Apple is teaming up with Playboy in the self-driving office.”
+
+                        <br>“New research finds that Osama Bin Laden was arrested for President on a Southwest Airlines
+                        flight.”</p>
+
+                    <p>
+                        <b>Yes, the results read a bit more like drunk Conan than real Conan.</b> Ren and Yang estimate
+                        only 12 percent of the jokes were funny (based on human ratings), and some of the funny jokes
+                        only generated laughs because they were so nonsensical.</p><br>
+
+                    <p><b>These efforts show there’s clearly a lot of work to be done before researchers can say they’ve
+                        successfully engineered humor.</b> “They’re an effective illustration of the state of
+                        computational humor today, which is both promising in the long term and discouraging in the
+                        short term,” says Misra. Yet if we ever want to build AI that simulates human-style
+                        intelligence, we’ll need to figure out how to code for funny. And when we finally do, this could
+                        turn our human fears of a machine uprising into something we can all laugh about.
+                    </p>
+                    <small class="author">
+                        Kevin Litman-Navarro
+                    </small>
+
+                    <footer>
+                        <div class="pull-right">
+                            <a class="btn btn-default btn-xs" href="indexLogged.html">Back &raquo </a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+
+<footer>
+    <div class="container modal-footer">
+        <p>&copy; 2018 &ndash; Software University Foundation</p>
+    </div>
+</footer>
+
+</body>
+</html>
